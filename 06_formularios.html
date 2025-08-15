@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários HTML</title>
+</head>
+<body>
+    <h1>Formulário de cadastro</h1>
+    <form action="processar.php" method="post">
+        <label for="nome">Nome completo</label> <br>
+        <input type="text" name="nome" id="nome" placeholder="Nome completo" required> <br><br>
+
+        <label for="email">E-mail</label> <br>
+        <input type="email" name="email" id="email" placeholder="Digite seu e-mail..." required> <br><br>
+
+        <label for="senha">Senha</label> <br>
+        <input type="password" name="senha" id="senha" required> <br><br>
+
+        <label>Sexo:</label> <br>
+        <input type="radio" id="masculino" name="masculino"  value="M">
+        <label for="masculino">Masculino</label> <br>
+        <input type="radio" id="feminino" name="feminino" value="F">
+        <label for="feminino">Feminino</label> <br><br>
+
+        <label>Interesses:</label> <br>
+        <input type="checkbox" name="interesses" id="programacao" value="progrmacao">
+        <label for="programacao">Programação</label> <br>
+        <input type="checkbox" name="interesses" id="design" value="design">
+        <label for="design">Design</label> <br>
+        <input type="checkbox" name="interesses" id="esportes" value="esportes">
+        <label for="esportes">Esportes</label> <br><br>
+
+        <label for="cidade">Cidade:</label>
+        <select name="cidade" id="cidade">
+            <option value="">Selecione uma cidade</option>
+            <option value="sp">São Paulo</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="mg">Belo Horizonte</option>
+        </select> <br><br>
+
+        <label for="comentarios">Comentários</label>
+        <textarea name="comentarios" id="comentarios" rows="4" cols="50"></textarea> <br><br>
+
+        <label for="foto">Foto:</label> <br>
+        <input type="file" name="foto" id="foto"> <br><br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+</body>
+</html>
