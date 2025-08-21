@@ -12,14 +12,39 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>📱TechNews Today</h1>
-    <p>As <strong>últimas novidades</strong> do mundo <em>tech</em></p>
-    <h2>🚀IA Revoluciona Desenvolvimento</h2>
-    <p>7 de Agosto, 2025</p>
-    <p>Inteligência artificial está transformando como criamos software...</p>
-    <ul>
-        <li>Leia mais &rarr;</li>
-    </ul>
-    <h3>📺Tech em Vídeo</h3>
+    <header>
+        <h1>📱TechNews Today</h1>
+        <p>As últimas novidades do mundo tech</p>
+    </header>
+    <main>
+        <h2>🚀IA Revoluciona Desenvolvimento</h2>
+        <p><time datetime="2025-08-07">7 de Agoste, 2025</time></p>
+        <p>Inteligência artificial está transformando como criamos software...</p>
+        <details>
+            <summary>Leia mais &rarr;</summary>
+        </details>
+        <article>
+            <h3>📺Tech em Vídeo</h3>
+            <iframe width="350px" height="200px" src="https://www.youtube.com/embed/eqUFcr1mI3Y" frameborder="0" allow="accelerometer; autoplay" allowfullscreen></iframe>
+            <h3>📧Newsletter</h3>
+            <form action="processar.php">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="interesse">Área de interesse</label>
+                <select name="interesse" id="interesse">
+                    <option value="inteligencia artificial">Inteligência artificial</option>
+                </select>
+
+                <input type="checkbox">
+                <label for="termos">Aceito os termos</label>
+
+                <button type="submit">Inscrever-se</button>
+            </form>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2025 TechNews Today - Todos os direitos reservados</p>
+    </footer>
 </body>
 </html>

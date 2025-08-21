@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna Captures</title>
+</head>
+<body>
+    <header>
+        <h1>📷Luna Captures</h1>
+    </header>
+    <nav>
+        <a href="#sobre">Sobre</a> |
+        <a href="#galeria">Galeria</a> |
+        <a href="#contato">Contato</a>
+    </nav>
+    <main>
+        <h2>Sobre Luna</h2>
+        <p>Fotógrafa há <strong>8 anos</strong> especializada em <em>momentos únicos</em>.</p>
+        <blockquote><q>A fotografia captura não apenas o que vemos, mas o que sentimos.</q></blockquote>
+        <section>
+            <h2 id="galeria">Galeria</h2>
+            <img src="imagens_desafio/download.jpg" alt="Casamento na praia" width="250">
+            <img src="imagens_desafio/images.jpg" alt="Casamento ao pôr do sol" width="242">
+            <img src="imagens_desafio/casamento-praia-maresias-buscando-sonhos-00.jpg" alt="" width="248">
+        <section>
+            <h2>Serviços</h2>
+            <ul>
+                <li><strong>Casamentos</strong> - R$ 1.200</li>
+                <li><strong>Retratos</strong> - R$ 350</li>
+                <li><strong>Eventos</strong> - R$ 600</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Contato</h2>
+            <form action="processar.php">
+                <label for="nome"> Nome:</label>
+                <input type="text" name="nome" id="nome" required> <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email"> <br><br>
+
+                <label for="evento">Evento</label>
+                <select name="evento" id="evento">
+                    <option value="casemento">Casamento</option>
+                </select> <br><br>
+
+                <label for="detalhes">Detalhes:</label> <br>
+                <textarea name="detalhes" id="detalhes" rows="5" cols="40"></textarea> <br><br>
+
+                <button type="submit">Solicitar Orçamento</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Luna Captures | <a href="mailto: luna@exemplo.com">luna@exemplo.com</a></p>
+    </footer>
+</body>
+</html>
